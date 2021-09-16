@@ -1,0 +1,29 @@
+
+The following examples come directly from the Rust WASM
+tutorial (link here)(nn):
+
+  01-hello_world
+  02-dom
+  03-canvas
+  04-julia_set
+  05-webaudio
+
+We use them here to demonstrate building from Rust sources
+to WASM targets.
+
+The last example, 06-mandelbrot, comes from the book
+"Rust in Action,"(xx) where the program is modified piecemeal
+to show the wasm-bindgen interface.
+
+
+Build
+=====
+
+cargo install cargo-edit
+
+cargo add num  # For mandelbrot program
+
+
+Need make files to build, test, clean, and push demoset
+
+
