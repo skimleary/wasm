@@ -1,7 +1,7 @@
 {
   "name": "wasm",
   "version": "1.0.0",
-  "description": "Rust, JavaScript, and Wasm",
+  "description": "Rust, JavaScript, and WebAssembly",
   "main": "index.js",
   "directories": {
     "doc": "doc"
