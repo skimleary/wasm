@@ -1,7 +1,10 @@
-JavaScript and Wasm
-===================
+Rust, JavaScript, and Wasm
+==========================
 
-<img src="https://www.raspberrypi.org/homepage-9df4b/static/bdc42b00ebe8f2312c4d229beb9325bf/53263/7d247ace-afb2-4555-b7b3-4f236eb779d6_Raspberry%2BPi%2BPico%2B1.jpg" width="35%">
+<img src="doc/meetup-Charlottesville_Rust_Meetup-green.svg" width="212" height="20">
+<img src="doc/docs-lacking-red.svg" width="84" height="20">
+<img src="doc/demos-working-green.svg" width="100" height="20">
+<img src="doc/contributions-welcome-brightgreen.svg" width="140" height="20">
 
 ## Examples
 The following examples were taken from the [Rust Wasm Tutorial](https://www.raspberrypi.org/products/raspberry-pi-pico/) ordered by complexity
