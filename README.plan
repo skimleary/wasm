@@ -1,0 +1,52 @@
+
+Charlottesville Rust Meetup
+https://www.meetup.com/Charlottesville-Rust-Meetup/members/
+
+
+Incorporate disparate files!!
+  - june.txt, july.txt, aug.txt
+  - README.*
+  -
+
+Obtain robotframework source to:
+  - produce internals document
+  - see how to extend keywords
+
+How to pass an argument to a keyword in robotframework?
+
+Build up public repo:
+  - ADS-B capture and plotting
+    - using FlightAware hardware and software
+  - Fizz-Buzz
+    - background/story
+      - used for interviews (possibly archaeic)
+      - extend in use{ful,less} ways
+  - rust meetup
+    - bring in mandelbrot
+      - build up mandelbrot in pieces
+        - 01-original
+	- 02-programmable
+	- 03-in browser textarea
+	- 04-in browser canvas
+	  - robot visualization test script
+    - notes/links markdown doc
+    - how to build wasm section
+  - Portfolio-on-a-Stick
+  -
+
+Invoking Robot scripts:
+
+Usage:
+  robot julia_test.robot
+  -or-
+  robot --variable BROWSER:xxxxxxx julia_test.robot
+where,
+  xxxxxxx is browser for test using one of: Chrome, Edge, Firefox, [Headless,] Opera
+
+Default browser is specified in the script (typ. Firefox)
+
+
+
+
+
+Ende

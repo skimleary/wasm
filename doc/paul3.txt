@@ -1,0 +1,28 @@
+
+Links
+*****
+
+Fun with a few languages several years ago:
+  Wat
+  https://www.destroyallsoftware.com/talks/wat
+
+Redox OS
+https://www.redox-os.org/
+Runs on bare metal or in a VM
+
+Asm.js
+https://en.wikipedia.org/wiki/Asm.js
+
+WebAssembly
+https://en.wikipedia.org/wiki/WebAssembly
+
+
+
+
+
+
+
+You mentioned Google Docs.  Do you want to go that route?  We can still use Markdown for our repo code
+and reference Docs from there.
+
+P.S. Oops, it's not "Google Wi."  Rather it's "Google Fi." -- https://fi.google.com/about/ -- And it does support hotspot tethering

@@ -1,0 +1,19 @@
+
+
+Rust in Action code:
+  https://github.com/rust-in-action/code
+
+Oxidizing Source Maps with Rust and WebAssembly
+https://hacks.mozilla.org/2018/01/oxidizing-source-maps-with-rust-and-webassembly/
+
+Rust and WebAssembly
+https://rustwasm.github.io/
+
+The `wasm-bindgen` Guide
+Introduction
+https://rustwasm.github.io/wasm-bindgen/
+
+Julia Set
+https://rustwasm.github.io/wasm-bindgen/examples/julia.html
+https://github.com/rustwasm/wasm-bindgen/tree/master/examples/julia_set
+https://rustwasm.github.io/wasm-bindgen/exbuild/julia_set/

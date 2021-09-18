@@ -1,0 +1,63 @@
+
+rustwasm / wasm-bindgen
+https://github.com/rustwasm/wasm-bindgen
+
+
+mkdir wasm
+cd wasm
+git clone https://github.com/rustwasm/wasm-bindgen.git
+# Consumes about 40 MiB
+cd wasm-bindgen/examples
+tar cf - canvas | (cd ../..; tar xf -)
+tar cf - dom | (cd ../..; tar xf -)
+tar cf - hello_world | (cd ../..; tar xf -)
+tar cf - julia_set | (cd ../..; tar xf -)
+tar cf - webaudio | (cd ../..; tar xf -)
+cd ../..
+rm -rf wasm-bindgen
+mv hello_world 01-hello_world
+mv dom 02-dom
+mv canvas 03-canvas
+mv julia_set 04-julia_set
+mv webaudio 05-webaudio
+
+README.md
+
+# Alert dialog box
+  cd 01-Hello_world
+  npm install
+  npm run serve
+
+# Text in <p></p>
+  cd ../02-dom
+  npm install
+  npm run serve
+
+# Smiley in <canvas></canvas>
+  cd ../03-canvas
+  npm install
+  npm run serve
+
+# Fractal in <canvas></canvas>
+  cd ../04-julia_set
+  npm install
+  npm run serve
+  Robot completed
+
+# Modulated audio using OscillatorNode
+# See: https://developer.mozilla.org/en-US/docs/Web/API/AudioNode
+  cd ../05-webaudio
+  npm install
+  npm run serve
+    id=play button to start audio
+    id=primary_input min="30" max="80" value="50"  # Primary frequency
+    id=fm_freq min="0" max="3" value="0" step="0.05"  # Modulation frequency
+    id=fm_amount min="0" max="3" value="0" step="0.05"  # Modulation amount (volume?)
+ 
+    Daisy Daisy
+    https://dazwatsonmusic.weebly.com/daisy-bell.html
+    daisy_bell_-_daisy_daisy.pdf
+
+
+
+Ende

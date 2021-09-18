@@ -1,0 +1,152 @@
+
+Browser Tabs
+************
+
+Rust Meetup
+Graphemes, scalars, bytes, UTF-8, oh my! How does Rust handle Unicode
+https://www.meetup.com/Charlottesville-Rust-Meetup/events/279190367/
+
+Rust Graphics APIs
+https://lib.rs/rendering/graphics-api
+
+GPU for the Web Community Group
+https://www.w3.org/community/gpu/
+Repo: https://github.com/gpuweb/
+
+Rust Crate luminance
+https://docs.rs/luminance/0.44.0/luminance/
+
+Learn luminance
+https://rust-tutorials.github.io/learn-luminance/introduction.html
+
+Gfx-rs nuts and bolts   !!!
+Gfx-rs is a low-level graphics abstraction layer in Rust
+https://gfx-rs.github.io/2020/04/21/wgpu-web.html
+
+gfx-rs / wgpu Repo    !!!
+https://github.com/gfx-rs/wgpu
+
+WebAssembly Studio
+https://webassembly.studio/
+
+Shrinking .wasm Size
+https://rustwasm.github.io/book/game-of-life/code-size.html#shrinking-wasm-size
+
+Install wasm-pack
+https://rustwasm.github.io/wasm-pack/installer/
+
+WebAssembly and Rust: There and Back Again
+https://codeburst.io/webassembly-and-rust-there-and-back-again-9ad76f61d616
+
+Wasmer in Rust
+https://docs.wasmer.io/integrations/rust
+
+WASI Tutorial
+https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-tutorial.md
+
+WABT: The WebAssembly Binary Toolkit
+https://github.com/WebAssembly/wabt
+"Wabbit"
+
+binaryen
+https://github.com/WebAssembly/binaryen
+
+Emscripten Tutorial
+https://emscripten.org/docs/getting_started/Tutorial.html
+
+Outside the web: standalone WebAssembly binaries using Emscripten
+https://v8.dev/blog/emscripten-standalone-wasm
+
+Chocolatey Emscripten 2.0.21 Package
+https://community.chocolatey.org/packages/emscripten
+
+Hello, Rust!
+https://www.hellorust.com/setup/emscripten/
+
+Crate wasm_bindgen
+https://docs.rs/wasm-bindgen/0.2.74/wasm_bindgen/index.html
+
+Tutorial: Conway's Game of Life
+https://rustwasm.github.io/docs/book/game-of-life/introduction.html
+
+Emscripten SDK
+https://github.com/kaizhu256/emsdk_portable
+
+Debugging WebAssembly with modern tools
+https://developer.chrome.com/blog/wasm-debugging-2020/
+
+asm.js
+https://en.wikipedia.org/wiki/Asm.js#cite_note-38
+
+Mandelbrot set
+https://en.wikipedia.org/wiki/Mandelbrot_set
+
+Animating URLs with Javascript and Emojis
+https://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/#%F0%9F%8C%92
+
+Discovery
+https://docs.rust-embedded.org/discovery/
+
+Embedded Rust documentation
+https://docs.rust-embedded.org/
+
+Google Native Client (NaCl)
+https://en.wikipedia.org/wiki/Google_Native_Client
+
+
+
+
+
+
+Correspondence
+**************
+
+Hi Steven, thanks for attending last night. Did you say you were interested
+in Rust and WASM? If so I was thinking about a presentation on that topic in
+late September early October and I was wondering if you were interested in
+teaming on it? Thinking something along the lines of either comparing performance
+of Rust vs Javascript for computationally complex tasks, or a study of how to port
+a Rust application to WASM. Totally open to other ideas too. Cheers, Paul
+
+Hi Paul,
+Sorry for the lengthy delay.  I wanted to formulate a response regarding
+a possible collaboration on Rust vs. JavaScript.  But first...
+
+I enjoyed the session and gained in learning Unicode.  I didn't know about
+the partitioning, just mainly about ASCII down at the low end.  Also, the
+byte translation showing the problem of efficiency was an eye opener.
+Very nice presentation.
+
+Yes, I'd love to team up with you on Rust <-> JavaScript.  I have been playing around
+with some local environments and can easily generate slides showing build-to-run steps.
+Something like:
+
+  - Rust to Wasm conversion using cargo
+      + cargo build --target wasm32-wasi
+      + cargo build --target wasm32-unknown-unknown
+  - Rust to Wasm conversion using wasm-pack (https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm)
+  - Rust to Wasm conversion using Emscripten (https://emscripten.org/)
+  - Executing Wasm in the browser
+  - Executing Wasm on the command line using wasmtime (https://wasmtime.dev/) and wasmer (https://wasmer.io/)
+  - Executing Wasm on the command line using Node.js (https://nodejs.org/api/wasi.html)
+
+Applications (demos) to consider (stolen from Rust in Action book):
+
+Mandelbrot set rendering in the browser
+  - Render textual version
+  - Render raster version in <canvas></canvas>
+
+Operating system running in QEMU
+
+
+If this is something you think will work for the group, I'll be more than happy
+to build this up!
+
+
+
+https://fuchsia.dev
+
+https://aws.amazon.com/bottlerocket/
+
+https://github.com/spacejam/sled
+
