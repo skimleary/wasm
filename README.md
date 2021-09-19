@@ -1,7 +1,7 @@
 <div align="center">
 <h2>Rust, JavaScript, and WebAssembly</h2>
 <p>
-<a href="https://www.meetup.com/Charlottesville-Rust-Meetup/"><img src="doc/logo-Charlottesville_Rust_Meetup-blue.svg" width="179" height="20"></a>
+<a href="https://www.meetup.com/Charlottesville-Rust-Meetup/"><img src="doc/logo--Charlottesville_Rust_Meetup-blue.svg" width="179" height="20"></a>
 <img src="doc/docs-lacking-red.svg" width="84" height="20">
 <img src="doc/demos-working-green.svg" width="100" height="20">
 <img src="doc/contributions-welcome-brightgreen.svg" width="140" heigt="20">
