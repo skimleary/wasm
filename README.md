@@ -9,16 +9,17 @@
 </div>
 
 ## Examples
-The following examples were taken from the [Rust Wasm Tutorial](https://www.raspberrypi.org/products/raspberry-pi-pico/) ordered by complexity
-
-- 01-hello_world
-- 02-dom
-- 03-canvas
-- 04-julia_set
-- 05-webaudio
-- 06-mandelbrot
-- 07-game_of_life
-- 08-qemu_tock
+* From the Mozilla Foundation
+  * [00-asmjs](https://github.com/skimleary/wasm/00-asmjs/README.md)
+* From the [Rust Wasm Tutorial](https://www.raspberrypi.org/products/raspberry-pi-pico/) ordered by complexity
+  * 01-hello_world
+  * 02-dom
+  * 03-canvas
+  * 04-julia_set
+  * 05-webaudio
+  * [06-mandelbrot](https://github.com/skimleary/wasm/06-mandelbrot/README.md)
+  * 07-game_of_life
+  * 08-qemu_tock
 
 We use them here to demonstrate building from Rust sources to WASM targets.
 
