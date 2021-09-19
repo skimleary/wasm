@@ -1,3 +1,10 @@
+<div align="center">
+
+<img src="doc/mandelbrot2.png" width="224" height="152" alt="Mandelbrot Snap">
+
+</div>
+
+## Evolution 
 
 01-original
 From the book "Rust in Action"
