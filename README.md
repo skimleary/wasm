@@ -8,6 +8,11 @@
 </p>
 </div>
 
+Since its first appearance in the Firefox browser in November 2017, WebAssembly has gained in momentum its use for performant, efficient processing in client Web browsers, as well as in system-level use for other applications not normally associated with Web-oriented operation.
+
+## Five Ws and How
+## History
+
 ## Introduction
 
 ## Examples
@@ -54,6 +59,8 @@ To install `OpenOCD` run the following commands:
 
 [wasm-bindgen](https://rustwasm.github.io/wasm-bindgen/)
 
+[Wasmer](https://github.com/wasmerio/wasmer)
+
 [Implementing Conway's Game of Life](https://rustwasm.github.io/docs/book/game-of-life/implementing.html#rust-implementation)
 
 [WebAssembly Studio](https://webassembly.studio/)
@@ -64,7 +71,11 @@ To install `OpenOCD` run the following commands:
 
 [The Embedded Rust Book](https://docs.rust-embedded.org/book/index.html)
 
+[WebAssembly Concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 
+[Wasm Use Cases](https://webassembly.org/docs/use-cases/)
+
+<br></br>
 
 <div align="center"><sub>
 <a href="doc/prod_notes.md">Production Notes</a><span> | </span>
