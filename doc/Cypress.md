@@ -4,11 +4,20 @@ Chai (built-in) and Mocha (optional).  The default browser is Electron
 (Chromium), but the other other mainstream browsers are supported.
 
 
+Installing Cypress
+https://docs.cypress.io/guides/getting-started/installing-cypress
+
+Configuration
+https://docs.cypress.io/guides/references/configuration
+
 Command Line
-https://docs.cypress.io/guides/guides/command-line#Installation
+https://docs.cypress.io/guides/guides/command-line
+
+The Test Runner
+https://docs.cypress.io/guides/core-concepts/test-runner
 
 Writing and Organizing Tests
-https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Test-Configuration
+https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests
 
 Standard UI mode:
 
@@ -23,4 +32,11 @@ Command line run:
     --browser <Chrome|Edge|Electron|Firefox>
 
 
+
+BDD
+
+BDD Automation Framework
+https://www.toolsqa.com/cypress/bdd-automation-framework-in-cypress/
+
+npm install --save-dev cypress-cucumber-preprocessor
 

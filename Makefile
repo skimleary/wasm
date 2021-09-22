@@ -7,9 +7,13 @@ all:
 install:
 	@$(MAKE) -C src install
 
-package:
-	@$(MAKE) -C src package
+test:
+	#@$(MAKE) -C src test
+	NO_COLOR=1 npx cypress run --config video=false
 
 clean:
 	@$(MAKE) -C src clean
+	# cypress/downloads/*
+	# cypress/screenshots/*
+	# cypress/videos/*
 

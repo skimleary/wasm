@@ -2,17 +2,21 @@
 
 // -- Start: Our Application Code --
 function fizzbuzz(num) {
-  if (num % 3 === 0 && num % 5 === 0) {
-    return 'fizzbuzz'
-  }
+  let rslt = ''
 
   if (num % 3 === 0) {
-    return 'fizz'
+    rslt = 'fizz'
   }
 
   if (num % 5 === 0) {
-    return 'buzz'
+    rslt = rslt + 'buzz'
   }
+
+  else if (rslt === '') {
+    rslt = num
+  }
+
+  return rslt
 }
 // -- End: Our Application Code --
 
@@ -36,6 +40,13 @@ describe('Unit Test FizzBuzz', () => {
 
   it('returns "fizzbuzz" when number is multiple of both 3 and 5', () => {
     numsExpectedToEq([15, 30, 60], 'fizzbuzz')
+  })
+
+  it('returns number when number does not match any criteria above', () => {
+    expect(fizzbuzz(1) == 1)
+    expect(fizzbuzz(2) == 2)
+    expect(fizzbuzz(21) == 21)
+    expect(fizzbuzz(99) == 99)
   })
 })
 
