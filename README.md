@@ -8,14 +8,14 @@
 </p>
 </div>
 
-Since its first appearance in the Firefox browser in November 2017, WebAssembly has gained in momentum its use for performant, efficient processing in client Web browsers, as well as in system-level use for other applications not normally associated with Web-oriented operation.
+Since its first appearance in the Firefox browser in November 2017, WebAssembly has gained momentum in its use for performant, efficient processing in client Web browsers, as well as in system-level use for other applications not normally associated with Web-oriented operation.
 
-## Five Ws and How
-## History
+### Five Ws and How
+### History
 
-## Introduction
+### Introduction
 
-## Examples
+### Examples
 The examples that follow are used to demonstrate building from Rust sources to WebAssembly (Wasm) targets using various different methods, and to show the underlying interfaces that bridge the JavaScript <-> Rust|Wasm domains.
 
 * From the Mozilla Foundation
@@ -31,7 +31,7 @@ The examples that follow are used to demonstrate building from Rust sources to W
   * [07-game_of_life](07-game_of_life)
   * [08-qemu_tock](08-qemu_tock)
 
-## Getting Started
+### Getting Started
 
 Refer to the [Getting Started guide](doc/Getting_Started.md) for more information.
 
@@ -47,15 +47,7 @@ To install `OpenOCD` run the following commands:
     $ sudo make install
     $ cd ~
 
-
-## Further Information
-
-<p>Put a whole bunch of links in here with verbiage
-</p>
-
-
-
-
+### Further Information
 
 [wasm-bindgen](https://rustwasm.github.io/wasm-bindgen/)
 
