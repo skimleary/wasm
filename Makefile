@@ -1,5 +1,5 @@
 
-.PHONY: all install package clean
+.PHONY: all install test clean
 
 all:
 	@$(MAKE) -C src all
