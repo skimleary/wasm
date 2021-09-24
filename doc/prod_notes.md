@@ -7,8 +7,10 @@ GitHub does not allow font coloring, I suspect due to possible abuse.  Remember 
 
 ### Guides, How-tos
 
-* [GitHub Markdown CSS Demo](https://sindresorhus.com/github-markdown-css/ "Very good writeup")
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/ "GitHub official guide")
+- [GitHub Markdown CSS Demo](https://sindresorhus.com/github-markdown-css/ "Very good writeup")
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/ "GitHub official guide")
+- [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
+
 ### Tools Used
 
 * Audio recordings for slide presentation: `ffmpeg`

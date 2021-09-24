@@ -47,7 +47,11 @@ To install `OpenOCD` run the following commands:
     $ sudo make install
     $ cd ~
 
-### Further Information
+### Further Reading
+
+The following links provide related information to the Rust language, tooling, testing, and further use.
+
+[Rust and WebAssembly](https://rustwasm.github.io/) and [Rust and WebAssembly](https://github.com/rustwasm)
 
 [wasm-bindgen](https://rustwasm.github.io/wasm-bindgen/)
 
