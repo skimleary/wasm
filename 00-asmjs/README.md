@@ -15,13 +15,14 @@
 * xx
 
 ## Code Samples
-The code samples provided are taken from existing sites. Here they are condensed as edit, build, and run steps, so that discussion x x x.
+The code samples provided are taken from existing sites. Here they are condensed as view, build, and run steps, so that discussion x x x.
 
 Before any sample code that follows can execute, the Emscripten build tool must be installed.  Installation instructions can be found [here](foo/bar).
 ### Hello World
-Obligatory first build
+__Obligatory first build__
 
-Edit: hello.c
+<details>
+<summary>File: hello.c</summary>
 
     #include <stdio.h>  
     
@@ -29,14 +30,14 @@ Edit: hello.c
         printf("hello, world!\n");  
         return 0;  
     }
-
-Build: <code>emcc -s WASM=0 hello.c -o index.html</code>  
+</details>
+Build: <code>emcc -s WASM=0 hello_world.c -o hello_world.html</code>  
 Execute<sup>2</sup>: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code>  
-Browse to: <code>localhost:8000/index.html</code>
+Browse to: <code>localhost:8000/hello_world.html</code>
 
-In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm. The -o option indicates that Web target files are to be generated (index.html and index.js). The asm.js code will be embedded in index.js.
+In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm. The -o option indicates that Web target files are to be generated (hello.html and hello.js). The asm.js code will be embedded in hello.js.
 
-[emscripten tutorial](https://emscripten.org/docs/getting_started/Tutorial.html)
+__Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
 
 <details>
 <summary>File: hello_world_sdl.cpp</summary>
@@ -88,13 +89,21 @@ In the emcc command above the -s option indicates that JavaScript (asm.js) is to
       return 0;
     }
 </details>
+Build: <code>emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html</code>  
+Execute: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code>  
+Browse to: <code>localhost:8000/hello_world_sdl.html</code>
+
+The above samples came from the Emscripten Tutorial<sup>4</sup>.  More information can be found there.
+
 
 ### Sweeper
 Browser frames-per-second sweep test
 
 ## Further Reading
-1: Originally seen as a Far Side comic.  
-2: [Big list of http static server one-liners](https://gist.github.com/willurd/5720255)
+1: Originally seen as a Far Side comic  
+2: [Big list of http static server one-liners](https://gist.github.com/willurd/5720255)  
+3: [About SDL](https://www.libsdl.org/)  
+4: [Emscripten Tutorial](https://emscripten.org/docs/getting_started/Tutorial.html)
 
 - [asm.js site](http://asmjs.org)
 - [asm.js](https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js)
