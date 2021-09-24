@@ -31,9 +31,9 @@ __Obligatory first build__
         return 0;  
     }
 </details>
-Build: <code>emcc -s WASM=0 hello_world.c -o hello_world.html</code>  
-Execute<sup>2</sup>: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code>  
-Browse to: <code>localhost:8000/hello_world.html</code>
+Build: <code>emcc -s WASM=0 hello_world.c -o hello_world.html</code><br />
+Execute<sup>2</sup>: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code><br />
+Browse to: <code>localhost:8000/hello_world.html</code><br />
 
 In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm. The -o option indicates that Web target files are to be generated (hello.html and hello.js). The asm.js code will be embedded in hello.js.
 
@@ -89,9 +89,9 @@ __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
       return 0;
     }
 </details>
-Build: <code>emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html</code>  
-Execute: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code>  
-Browse to: <code>localhost:8000/hello_world_sdl.html</code>
+Build: <code>emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html</code><br />
+Execute: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code><br />
+Browse to: <code>localhost:8000/hello_world_sdl.html</code><br />
 
 The above samples came from the Emscripten Tutorial<sup>4</sup>.  More information can be found there.
 
