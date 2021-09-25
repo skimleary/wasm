@@ -18,11 +18,19 @@
 The code samples provided are taken from existing sites. Here they are condensed as view, build, and run steps, so that discussion x x x.
 
 Before any sample code that follows can execute, the Emscripten build tool must be installed.  Installation instructions can be found [here](foo/bar).
+
 ### Hello World
 __Obligatory first build__
 
 <details>
-<summary>File: hello.c</summary>
+<summary>File: hello\_world.c</summary>
+
+    /*
+     * Copyright 2011 The Emscripten Authors.  All rights reserved.
+     * Emscripten is available under two separate licenses, the MIT license and the
+     * University of Illinois/NCSA Open Source License.  Both these licenses can be
+     * found in the LICENSE file.
+     */
 
     #include <stdio.h>  
     
@@ -31,16 +39,16 @@ __Obligatory first build__
         return 0;  
     }
 </details>
-Build: <code>emcc -s WASM=0 hello_world.c -o hello_world.html</code><br />
-Execute<sup>2</sup>: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code><br />
-Browse to: <code>localhost:8000/hello_world.html</code><br />
+1. Build: `emcc -s WASM=0 hello_world.c -o hello_world.html`  
+2. Execute<sup>2</sup>: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
+3. Browse: `localhost:8000/hello_world.html`
 
-In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm. The -o option indicates that Web target files are to be generated (hello.html and hello.js). The asm.js code will be embedded in hello.js.
+In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm (the default). The -o option indicates that Web target files are to be generated (hello\_world.html and hello\_world.js). The asm.js code will be embedded in hello.js.
 
 __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
 
 <details>
-<summary>File: hello_world_sdl.cpp</summary>
+<summary>File: hello\_world\_sdl.cpp</summary>
 
     // Copyright 2011 The Emscripten Authors.  All rights reserved.
     // Emscripten is available under two separate licenses, the MIT license and the
@@ -89,9 +97,9 @@ __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
       return 0;
     }
 </details>
-Build: <code>emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html</code><br />
-Execute: <code>python -m http.server 8000</code> -or- <code>python2 -m SimpleHTTPServer 8000</code><br />
-Browse to: <code>localhost:8000/hello_world_sdl.html</code><br />
+1. Build: `emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html`  
+2. Execute: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
+3. Browse: `localhost:8000/hello_world_sdl.html`
 
 The above samples came from the Emscripten Tutorial<sup>4</sup>.  More information can be found there.
 
