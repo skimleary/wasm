@@ -20,10 +20,11 @@ The code samples provided are taken from existing sites. Here they are condensed
 Before any sample code that follows can execute, the Emscripten build tool must be installed.  Installation instructions can be found [here](foo/bar).
 
 ### Hello World
-__Obligatory first build__
 
-<details>
-<summary>File: hello\_world.c</summary>
+__Build 1: Obligatory Hello World__
+
+<p><details>
+<summary>File: hello_world.c</summary>
 
     /*
      * Copyright 2011 The Emscripten Authors.  All rights reserved.
@@ -38,17 +39,19 @@ __Obligatory first build__
         printf("hello, world!\n");  
         return 0;  
     }
-</details>
+
+</details></p>
+
 1. Build: `emcc -s WASM=0 hello_world.c -o hello_world.html`  
 2. Execute<sup>2</sup>: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
 3. Browse: `localhost:8000/hello_world.html`
 
-In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm (the default). The -o option indicates that Web target files are to be generated (hello\_world.html and hello\_world.js). The asm.js code will be embedded in hello.js.
+In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm (the default). The -o option indicates that Web target files are to be generated (hello_world.html and hello_world.js). The asm.js code will be embedded in hello_world.js.
 
 __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
 
-<details>
-<summary>File: hello\_world\_sdl.cpp</summary>
+<p><details>
+<summary>File: hello_world_sdl.cpp</summary>
 
     // Copyright 2011 The Emscripten Authors.  All rights reserved.
     // Emscripten is available under two separate licenses, the MIT license and the
@@ -96,7 +99,8 @@ __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
     
       return 0;
     }
-</details>
+</details></p>
+
 1. Build: `emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html`  
 2. Execute: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
 3. Browse: `localhost:8000/hello_world_sdl.html`
@@ -117,4 +121,5 @@ Browser frames-per-second sweep test
 - [asm.js](https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js)
 - [The Top 42 Asmjs Open Source Projects on Github](https://awesomeopensource.com/projects/asmjs)  
     This page has many Rust examples including Mandelbrot.
+- [SDL Repo](https://github.com/libsdl-org/SDL)
 
