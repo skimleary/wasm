@@ -2,6 +2,13 @@
 <img src="doc/asmjs.png" width="138" height="45">
 </div>
 
+* [History](#history)
+* [Code Generation](#code-generation)
+* [Code Samples](#code-samples)
+  * [Hello World](#hello-world)
+  * [Sweeper](#sweeper)
+* [Further Reading](#further-reading)
+
 ## History
 * Browser wars
 * Mozilla
@@ -101,7 +108,7 @@ __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
     }
 </details></p>
 
-1. Build: `emcc -s WASM=0 hello_world_sdl.c -o hello_world_sdl.html`  
+1. Build: `emcc -s WASM=0 hello_world_sdl.cpp -o hello_world_sdl.html`  
 2. Execute: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
 3. Browse: `localhost:8000/hello_world_sdl.html`
 
