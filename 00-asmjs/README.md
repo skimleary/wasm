@@ -22,9 +22,11 @@
 * xx
 
 ## Code Samples
-The code samples provided are taken from existing sites. Here they are condensed as view, build, and run steps, so that discussion x x x.
+The code samples provided are taken from existing sites. Here they are condensed as view, build, and run steps,
+so that cursory discussions may follow.
 
-Before any sample code that follows can execute, the Emscripten build tool must be installed.  Installation instructions can be found [here](foo/bar).
+Before any sample code that follows can execute, the Emscripten build tool must be installed.  Installation
+instructions can be found [here](https://emscripten.org/docs/getting_started/downloads.html).
 
 ### Hello World
 
@@ -57,6 +59,8 @@ In the emcc command above the -s option indicates that JavaScript (asm.js) is to
 
 __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
 
+ Here a graphical element is added using the SDL library, taking advantage of Direct3D and OpenGL.
+ 
 <p><details>
 <summary>File: hello_world_sdl.cpp</summary>
 
@@ -109,10 +113,10 @@ __Build 2: Hello World and Simple DirectMedia Layer (SDL)<sup>3</sup>__
 </details></p>
 
 1. Build: `emcc -s WASM=0 hello_world_sdl.cpp -o hello_world_sdl.html`  
-2. Execute: `python -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
+2. Execute: `python3 -m http.server 8000` -or- `python2 -m SimpleHTTPServer 8000`  
 3. Browse: `localhost:8000/hello_world_sdl.html`
 
-The above samples came from the Emscripten Tutorial<sup>4</sup>.  More information can be found there.
+The above samples came from the Emscripten Tutorial<sup>4</sup>.  More information can be found [here](https://emscripten.org/docs/getting_started/Tutorial.html).
 
 
 ### Sweeper
@@ -128,5 +132,7 @@ Browser frames-per-second sweep test
 - [asm.js](https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js)
 - [The Top 42 Asmjs Open Source Projects on Github](https://awesomeopensource.com/projects/asmjs)  
     This page has many Rust examples including Mandelbrot.
+ 
+ 
 - [SDL Repo](https://github.com/libsdl-org/SDL)
 
