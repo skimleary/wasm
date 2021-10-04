@@ -52,7 +52,7 @@ __Build 1: Obligatory Hello World__
 </details></p>
 
 1. Build: `emcc -s WASM=0 hello_world.c -o hello_world.html`  
-2. Execute<sup>2</sup>: `python -m http.server` -or- `python2 -m SimpleHTTPServer`  
+2. Execute<sup>2</sup>: `python3 -m http.server` -or- `python2 -m SimpleHTTPServer`  
 3. Browse: `localhost:8000/hello_world.html`
 
 In the emcc command above the -s option indicates that JavaScript (asm.js) is to be generated instead of Wasm (the default). The -o option indicates that Web target files are to be generated (hello_world.html and hello_world.js). The asm.js code will be embedded in hello_world.js.
